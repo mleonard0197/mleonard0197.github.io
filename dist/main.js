@@ -1,0 +1,1 @@
+(()=>{function e(){alert("The server is live!")}document.getElementById("content").appendChild(function(){const n=document.createElement("div"),t=document.createElement("button");return n.innerHTML="Hellooooo",t.innerHTML="click me",t.onclick=e,n.appendChild(t),n}())})();
