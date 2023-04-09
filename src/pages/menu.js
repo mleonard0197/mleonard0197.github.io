@@ -86,7 +86,7 @@ const menu = function() {
     infoThree.appendChild(priceThree);
 
     const desThree = document.createElement('p');
-    desThree.innerHTML = 'Pork belly and chicken liver seasoned with calamansi, onions, and chili peppers all cooked to perfection!';
+    desThree.innerHTML = "A Filipino-styled shaved ice. It's a cold and refreshing treat you'll want year-round!";
     infoThree.appendChild(desThree);
 
     return menuC
