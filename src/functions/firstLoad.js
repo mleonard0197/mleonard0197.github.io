@@ -8,7 +8,7 @@ function firstLoad() {
     //Appends header as first child of the content element
     header();
     //pageLoad func for homepage
-    pageLoad('menu');
+    pageLoad('home');
 }
 
 export default firstLoad;
