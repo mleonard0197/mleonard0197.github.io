@@ -54,12 +54,15 @@ body {
 
 .home-content .logo-img {
     /* animation: 8s ease-in loadInSlow; */
-    animation: 3s ease-in sizeInc;
+    /* animation: 3s ease-in sizeInc; */
 
-    width: 650px;
+    /* width: 650px; */
+    /* width: 50%; */
+
+    max-width: 600px;
 
     padding-right: 1rem;
-    z-index: 10;
+
 }
 
 .home-content h2 {
@@ -76,7 +79,7 @@ body {
 }
 
 .home-content .load-food {
-    width: 300px;
+    width: 22%;
     position: absolute;
 }
 
@@ -94,11 +97,263 @@ body {
     right: 2.5%;
 }
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    width: 90%;
+    /* padding-left: 10rem; */
+    /* padding-right: 10rem; */
+
+    justify-content: flex-start;
+    gap: 3rem;
+    
+}
+
+/* Set font family and remove default padding and margin on About page */
+.about-container  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-container .bio-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 187, 70), 
+        rgba(238, 238, 238, 0.902)
+      ) 1 100%;
+    color: #ffffff;
+    border-radius:20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+
+    animation: 2s ease-in loadInSlow;
+
+}
+
+.about-container .hours-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 187, 70), 
+        rgba(238, 238, 238, 0.902)
+      ) 1 100%;
+    color: #ffffff;
+    border-radius:20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+
+    animation: 3s ease-in loadInSlow;
+}
+
+.about-container .location-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;   
+
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 187, 70), 
+        rgba(238, 238, 238, 0.902)
+      ) 1 100%;
+    color: #ffffff;
+    border-radius:20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+    animation: 4s ease-in loadInSlow;
+}
+
+.about-container h2 {
+    font-size: 60px;
+}
+
+
+.about-container .div-text {
+    margin-left: 1rem;
+    font-size: 25px;
+}
+
+.about-container img {
+    width: 100px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+/* About page flower images */
+
+.about-container .img-one {
+    top: 2rem;
+    right: 2rem;
+}
+
+.about-container .img-two {
+    bottom: 2rem;
+
+}
+
+/* Bio,  */
 
 
 
+/* .bio-container > * {
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    
+}
 
 
+
+.hours-container > * {
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.location-container > * {
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+} */
+
+.bio-container p {
+    font-size: large;
+}
+
+
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    width: 90%;
+    padding-top: 2rem;
+    /* padding-left: 10rem; */
+    /* padding-right: 10rem; */
+
+    justify-content: flex-start;
+    gap: 3rem;
+
+    color: white;   
+}
+
+.menu-container div > * {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container .food-container {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 15%;
+    margin-right: 15%;   /* border-radius: 20px; */
+    /* border:2px solid #ffffff; */
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 187, 70), 
+        rgba(238, 238, 238, 0.902)
+      ) 1 100%;
+    color: #ffffff;
+    border-radius:20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    
+
+    /* animation: 4s ease-in loadInSlow; */
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    filter: opacity(0%);
+    animation: 2s ease-in loadInSlow;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.info-container h2 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.info-container p {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    min-width: 50%;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.menu-container img {
+    min-width: 300px;
+    max-width: 50%;
+    min-width: 25%;
+    animation: 2s ease-in loadInSlow;
+    /* max-width: 350px; */
+    /* max-height: 200px;
+    min-height: 300px; */
+}
+
+@media only screen and (max-width: 768px) {
+    .header-box {
+        background-color: red;
+    }
+    .food-container {
+        flex-direction: column !important;
+    }
+
+    .food-container img {
+        min-height: 150px;
+        min-width: 150px;
+    }
+}
 
 
 @keyframes loadInSlow {
